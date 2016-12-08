@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         return randomTime }
    
     }
+    if randomTimer() {
+    view.backgroundColor = UIColor.green }
+
     @IBAction func endButton(_ sender: UIButton) {
     
                
