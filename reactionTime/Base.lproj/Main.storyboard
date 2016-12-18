@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--How fast can you react?-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="reactionTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTz-zo-khO">
-                                <frame key="frameInset" minX="67" minY="271" width="245" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <frame key="frameInset" minX="52.51%" minY="50.47%" width="76" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mM-Dy-tIL">
-                                <frame key="frameInset" minX="141" minY="108" width="92" height="30"/>
+                                <frame key="frameInset" minX="132" minY="108" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Click to start!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +35,10 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="diz-oM-lcf"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-5P-urX">
+                                <frame key="frameInset" minX="16" minY="184" width="151" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -42,10 +46,10 @@
                             <outletCollection property="gestureRecognizers" destination="5PQ-iY-CRI" appends="YES" id="gfc-uP-PbM"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="mSR-rZ-hCR"/>
+                    <navigationItem key="navigationItem" title="How fast can you react?" id="mSR-rZ-hCR"/>
                     <connections>
+                        <outlet property="imageView" destination="CMT-5P-urX" id="82g-JK-2cu"/>
                         <outlet property="instructions" destination="MTz-zo-khO" id="2ri-Pi-ufT"/>
-                        <segue destination="3p2-zH-OzU" kind="showDetail" identifier="segue.push.alert" id="7yV-6q-7pe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,30 +60,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="127.28635682158921"/>
-        </scene>
-        <!--High Score-->
-        <scene sceneID="7Qk-Uc-6sq">
-            <objects>
-                <viewController id="3p2-zH-OzU" customClass="highScore" customModule="reactionTime" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dof-7I-LdW"/>
-                        <viewControllerLayoutGuide type="bottom" id="s4d-5m-qMJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tV4-OB-aU8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WuU-vE-vu6">
-                                <frame key="frameInset" minX="83" minY="164" width="209" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bEi-7I-WRn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1784.8" y="126.38680659670166"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D9d-nr-EIA">
