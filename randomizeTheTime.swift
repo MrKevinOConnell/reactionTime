@@ -9,9 +9,7 @@
 import UIKit
 
 class randomizeTheTime: NSObject {
-        var clicked = true
         var onTime = true
-        var played = true
         var numberOfTries = 0
         
     
